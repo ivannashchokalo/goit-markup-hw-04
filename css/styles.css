@@ -92,20 +92,19 @@ body {
 
 
 
-
 /* ========== HEADER ========== */
 
 .page-header {
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
 }
-
 
 .logo-header {
     margin-right: 76px;
 }
 
+.piece-logo-header {
+    color: #2e2f42;
+}
 
 .page-header-container {
     display: flex;
@@ -118,17 +117,10 @@ body {
     align-items: center;
 }
 
-.piece-logo-header {
-    color: #2e2f42;
-}
-
 .nav-list {
     display: flex;
     align-items: center;
-}
-
-.nav-list-item:not(:last-child) {
-    margin-right: 40px;
+    gap: 40px;
 }
 
 .nav-list-link {
@@ -153,13 +145,12 @@ body {
 .address-list {
     display: flex;
     align-items: center;
-}
-
-.address-list-item:not(:last-child) {
-    margin-right: 40px;
+    gap: 40px;
 }
 
 .address-list-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 400;
     font-size: 16px;    
     line-height: 1.5;
@@ -174,7 +165,6 @@ body {
 
 
 
-
 /* ========== HERO ========== */
 
 .hero{
@@ -183,13 +173,8 @@ body {
     background-color: #2e2f42;
 }
 
-.hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .main-title {
+    margin: 0 auto;
     max-width: 496px;
     margin-bottom: 48px;
     font-weight: 700;
@@ -201,6 +186,8 @@ body {
 }
 
 .modal-btn {
+    display: block;
+    margin: 0 auto;
     min-width: 169px;
     padding: 16px 32px;
     border: none;
@@ -235,10 +222,6 @@ body {
 .benefits-list-item {
     width: calc((100% - 72px) / 4);
 }
-/* 
-.benefits-list-item:not(:last-child) {
-    margin-right: 24px;
-} */
 
 .benefits-list-title {
     margin-bottom: 8px;
@@ -261,6 +244,7 @@ body {
 
 
 /* ========== TEAM ========== */
+
 
 .team {
     background-color: #F4F4FD;
