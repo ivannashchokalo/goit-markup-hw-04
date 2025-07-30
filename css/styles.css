@@ -264,7 +264,11 @@ body {
 }
 
 .team-card-content-wrapper {
-    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
 }
 
 .team-list-name {
@@ -278,12 +282,40 @@ body {
 }
 
 .team-list-position {
+    margin-bottom: 8px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     color:  #434455;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+
+}
+
+.social-list-icon {
+    fill: #f4f4fd;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background-color: #31d0aa;
 }
 
 
@@ -338,6 +370,15 @@ body {
     background-color: #2e2f42;
 }
 
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer-container {
+    margin-right: 120px;
+}
+
 .logo-footer {
     display: inline-block;
     margin-bottom: 16px;
@@ -354,4 +395,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+}
+
+.social-list-footer-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
 }
